@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
 import { AlertModule } from 'ngx-bootstrap';
+import { AppRouting } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -11,7 +14,12 @@ import { AlertModule } from 'ngx-bootstrap';
   ],
   imports: [
     BrowserModule,
-    AlertModule.forRoot()
+    RouterModule,
+    HttpClientModule,
+    AlertModule.forRoot(),
+
+    // app
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
