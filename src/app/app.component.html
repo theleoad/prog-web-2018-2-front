@@ -1,9 +1,12 @@
 <div class="container">
 
 	<!-- TOPO -->
-	<div class="row topo">
-		<div class="col">
+	<div class="row topo justify-content-between">
+		<div class="col-3">
 			<img class="logo" src="assets/imagens/logo.png" />
+		</div>
+		<div class="col-3">
+			<carrinho-widget></carrinho-widget>
 		</div>
 	</div>
 
@@ -59,7 +62,7 @@
 						<a class="nav-link" [routerLink]="['produto']">Produtos</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Categorias</a>
+						<a class="nav-link" [routerLink]="['categoria']">Categorias</a>
 					</li>
 				</ul>
 

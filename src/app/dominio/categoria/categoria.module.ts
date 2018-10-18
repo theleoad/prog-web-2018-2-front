@@ -4,17 +4,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { ProdutoRouting } from './produto.routing';
-import { ProdutoService } from './produto.service';
-import { ProdutoListaComponent } from './produto-lista/produto-lista.component';
-import { ProdutoFormularioComponent } from './produto-formulario/produto-formulario.component';
-import { CategoriaService } from '../categoria/categoria.service';
+import { CategoriaRouting } from './categoria.routing';
+import { CategoriaService } from './categoria.service';
+import { CategoriaListaComponent } from './categoria-lista/categoria-lista.component';
+import { CategoriaFormularioComponent } from './categoria-formulario/categoria-formulario.component';
 
 
 @NgModule({
     declarations: [
-        ProdutoListaComponent,
-        ProdutoFormularioComponent
+        CategoriaListaComponent,
+        CategoriaFormularioComponent
     ],
     imports: [
         // Angular
@@ -25,13 +24,12 @@ import { CategoriaService } from '../categoria/categoria.service';
         FormsModule,
 
         // Componente
-        ProdutoRouting
+        CategoriaRouting
     ],
     providers: [
         // Serviços
-        ProdutoService,
         CategoriaService
     ]
 })
 
-export class ProdutoModule { }
+export class CategoriaModule { }
