@@ -1,8 +1,8 @@
-.carrinho-widget{
-    width: 80px;
-    text-align: center;
-    background-color: brown;
+.carrinho-widget {
+  width: 80px;
+  text-align: center;
+  margin-left: calc(100% - 80px);
 }
-.carrinho-widget img{
-    width: 60px;
+.carrinho-widget img {
+  width: 60px;
 }
