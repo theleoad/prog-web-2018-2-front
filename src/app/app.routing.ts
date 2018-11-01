@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/', pathMatch: 'full'},
+    { path: '', redirectTo: '/produto/lista', pathMatch: 'full'},
     { path: 'produto', loadChildren: './dominio/produto/produto.module#ProdutoModule'},
     { path: 'categoria', loadChildren: './dominio/categoria/categoria.module#CategoriaModule'}
 ];
@@ -13,7 +13,7 @@ const appRoutes: Routes = [
 @NgModule({
     imports: [RouterModule.forRoot(
         appRoutes,
-        { enableTracing: true }
+        { enableTracing: false }
     )],
     exports: [RouterModule]
   })

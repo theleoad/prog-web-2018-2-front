@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { AppRouting } from './app.routing';
 import { CarrinhoWidget } from './dominio/carrinho/carrinho-widget/carrinho-widget.component';
+import { CarrinhoService } from './dominio/carrinho/carrinho.service';
+import { ProdutoService } from './dominio/produto/produto.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { CarrinhoWidget } from './dominio/carrinho/carrinho-widget/carrinho-widg
     // app
     AppRouting
   ],
-  providers: [],
+  providers: [
+    CarrinhoService,
+    ProdutoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

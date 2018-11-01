@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CarrinhoService } from './dominio/carrinho/carrinho.service';
+import { Carrinho } from './dominio/carrinho/carrinho';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prog-web-front';
+
+
+  constructor(){}
+
+
 }
